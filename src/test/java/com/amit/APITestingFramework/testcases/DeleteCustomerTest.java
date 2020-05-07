@@ -1,25 +1,36 @@
 package com.amit.APITestingFramework.testcases;
 
+import static io.restassured.RestAssured.*;
+
 import java.util.Hashtable;
 
+import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 
+import com.amit.APITestFramwork.APIs.DeleteCustomerAPI;
+import com.amit.APITestingFramework.Utilities.TestUtil;
+import com.amit.APITestingFramework.listeners.ExtentListeners;
+import com.amit.APITestingFramework.setUp.BaseTest;
+
+import io.restassured.response.Response;
 
 
 
 
-public class DeleteCustomerTest {
+
+public class DeleteCustomerTest extends BaseTest{
 
 	@Test()
 	public void deleteCustomer(Hashtable<String, String> data) {
 		
 		throw new SkipException("Skipping this exception");
 
-		//Response response = DeleteCustomerAPI.sendDeleteRequestToDeleteCustomerAPIWithValidID(data);
-		//response.prettyPrint();
-		//ExtentListeners.testReport.get().info(data.toString());
-		
+//		Response response = DeleteCustomerAPI.sendDeleteRequestToDeleteCustomerAPIWithValidID(data);
+//				//DeleteCustomerAPI.sendDeleteRequestToDeleteCustomerAPIWithValidID(data);
+//		response.prettyPrint();
+//		ExtentListeners.testReport.get().info(data.toString());
+//		
 		//System.out.println(response.statusCode());
 		
 	/*	String actual_id = response.jsonPath().get("id").toString();
@@ -50,7 +61,7 @@ public class DeleteCustomerTest {
 //		System.out.println("Deleted key value is : "+TestUtil.getJsonKeyValue(response.asString(), "deleted"));
 //		
 //		
-//		Assert.assertEquals(response.statusCode(), 200);
+		//Assert.assertEquals(response.statusCode(), 200);
 
 	}
 

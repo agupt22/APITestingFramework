@@ -1,4 +1,5 @@
 com\amit\APITestingFramework\Utilities\MonitoringMail$1.class
+com\amit\APITesttingFramework\rough\TestPaypal.class
 com\amit\APITestingFramework\listeners\ExtentListeners.class
 com\amit\APITestingFramework\Utilities\TestConfig.class
 com\amit\APITestingFramework\Utilities\MonitoringMail$SMTPAuthenticator.class

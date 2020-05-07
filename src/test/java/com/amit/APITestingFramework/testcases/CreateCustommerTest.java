@@ -38,7 +38,7 @@ public class CreateCustommerTest extends BaseTest {
 		ExtentListeners.testReport.get().info(data.toString());
 		response.prettyPrint();
 		System.out.println(response.statusCode());
-		Assert.assertEquals(response.statusCode(), 200);
+		Assert.assertEquals(response.statusCode(), 401);
 
 	}
 }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-30T13:34:54Z" name="Suite" finished-at="2020-04-30T13:35:00Z" duration-ms="5901">
+  <suite started-at="2020-05-07T09:17:45Z" name="Suite" finished-at="2020-05-07T09:17:53Z" duration-ms="7749">
     <groups>
     </groups>
-    <test started-at="2020-04-30T13:34:54Z" name="Create Customer API test" finished-at="2020-04-30T13:35:00Z" duration-ms="5901">
+    <test started-at="2020-05-07T09:17:45Z" name="Create Customer API test" finished-at="2020-05-07T09:17:53Z" duration-ms="7749">
       <class name="com.amit.APITestingFramework.testcases.CreateCustommerTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@3f07b12c]" started-at="2020-04-30T13:34:53Z" name="setUp" finished-at="2020-04-30T13:34:54Z" duration-ms="300" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@784b990c]" started-at="2020-05-07T09:17:45Z" name="setUp" finished-at="2020-05-07T09:17:45Z" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateCreateCustomerAPIWithInValidSecretKey(java.util.Hashtable)[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@3f07b12c]" started-at="2020-04-30T13:34:54Z" name="validateCreateCustomerAPIWithInValidSecretKey" data-provider="data" finished-at="2020-04-30T13:34:57Z" duration-ms="3248" status="FAIL">
+        <test-method signature="validateCreateCustomerAPIWithInValidSecretKey(java.util.Hashtable)[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@784b990c]" started-at="2020-05-07T09:17:45Z" name="validateCreateCustomerAPIWithInValidSecretKey" data-provider="data" finished-at="2020-05-07T09:17:50Z" duration-ms="4687" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -19,41 +19,21 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at com.amit.APITestingFramework.testcases.CreateCustommerTest.validateCreateCustomerAPIWithInValidSecretKey(CreateCustommerTest.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateCustomerAPIWithInValidSecretKey -->
-        <test-method signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@3f07b12c]" started-at="2020-04-30T13:34:57Z" name="validateCreateCustomerAPIWithValidSecretKey" data-provider="data" finished-at="2020-04-30T13:34:59Z" duration-ms="2430" status="PASS">
+        <test-method signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@784b990c]" started-at="2020-05-07T09:17:50Z" name="validateCreateCustomerAPIWithValidSecretKey" data-provider="data" finished-at="2020-05-07T09:17:53Z" duration-ms="3019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=java@way2automation.com, name=Rahul Arora, description=Adding the Second customer in framework}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
+        <test-method signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@784b990c]" started-at="2020-05-07T09:17:50Z" name="validateCreateCustomerAPIWithValidSecretKey" data-provider="data" finished-at="2020-05-07T09:17:53Z" duration-ms="3017" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,7 +44,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
-        <test-method signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@3f07b12c]" started-at="2020-04-30T13:34:57Z" name="validateCreateCustomerAPIWithValidSecretKey" data-provider="data" finished-at="2020-04-30T13:35:00Z" duration-ms="2599" status="PASS">
+        <test-method signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@784b990c]" started-at="2020-05-07T09:17:50Z" name="validateCreateCustomerAPIWithValidSecretKey" data-provider="data" finished-at="2020-05-07T09:17:53Z" duration-ms="2982" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,18 +55,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
-        <test-method signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@3f07b12c]" started-at="2020-04-30T13:34:57Z" name="validateCreateCustomerAPIWithValidSecretKey" data-provider="data" finished-at="2020-04-30T13:35:00Z" duration-ms="2562" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{email=java@way2automation.com, name=Rahul Arora, description=Adding the Second customer in framework}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@3f07b12c]" started-at="2020-04-30T13:35:00Z" name="tearDown" finished-at="2020-04-30T13:35:00Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amit.APITestingFramework.testcases.CreateCustommerTest@784b990c]" started-at="2020-05-07T09:17:53Z" name="tearDown" finished-at="2020-05-07T09:17:53Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
