@@ -41,4 +41,12 @@ public class CreateCustommerTest extends BaseTest {
 		Assert.assertEquals(response.statusCode(), 401);
 
 	}
+	
+	@Test(dataProviderClass = DataUtil.class, dataProvider = "data")
+	public void testForGit() {
+
+		System.out.print("This is my testing method, please ignore this test");
+
+	}
 }
+
